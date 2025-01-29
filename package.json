@@ -1,0 +1,11 @@
+{
+  "name": "@superhero/date",
+  "version": "4.0.0",
+  "description": "Extended date object with additional methods",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  }
+}
