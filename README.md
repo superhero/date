@@ -46,8 +46,6 @@ date.format('mm')                   // "04"
 
 ## Format Options
 
-### Date/Time Styles
-
 | Token        | Example                                    | Description                                            |
 | ------------ | ------------------------------------------ | ------------------------------------------------------ |
 | `DATETIME+-` | Thursday, July 4, 2024 at 2:04:05 PM GMT+7 | Full long date and time with numeric time zone offset. |
@@ -63,64 +61,49 @@ date.format('mm')                   // "04"
 | `TIME`       | 2:04:05 PM GMT+7                           | Time with simplified numeric time zone.                |
 | `Time`       | 2:04:05 PM                                 | Time with seconds, no time zone.                       |
 | `time`       | 2:04 PM                                    | Short time without seconds.                            |
-
-### Time Zone
-
-| Token        | Example   | Description                                     |
-| ------------ | --------- | ----------------------------------------------- |
-| `TIMEZONE`   | GMT+07:00 | Standard uppercase full time zone.              |
-| `TIMEZONE+-` | GMT+07:00 | Full numeric time zone with `+-` label.         |
-| `Timezone`   | GMT+7     | Simplified mixed-case time zone.                |
-| `timezone`   | GMT+7     | Lowercase simplified time zone.                 |
-| `timezone+-` | GMT+7     | Lowercase simplified time zone with `+-` label. |
-| `TZ`         | GMT+07:00 | Abbreviated uppercase time zone.                |
-| `tz`         | GMT+7     | Abbreviated lowercase time zone.                |
-| `+-`         | +07:00    | Pure numeric offset only.                       |
-
-### Date Components
-
-| Token      | Example  | Description                           |
-| ---------- | -------- | ------------------------------------- |
-| `YYYY`     | 2024     | Four-digit year.                      |
-| `yy`       | 24       | Two-digit year.                       |
-| `MONTH`    | July     | Full month name.                      |
-| `month`    | Jul      | Abbreviated month name.               |
-| `Month1`   | J        | First letter of month name.           |
-| `MM`       | 07       | Two-digit month number.               |
-| `MM1`      | 7        | One-digit month number if applicable. |
-| `WEEKDAY`  | Thursday | Full weekday name.                    |
-| `weekday`  | Thu      | Abbreviated weekday name.             |
-| `Weekday1` | T        | First letter of weekday.              |
-| `DAY`      | Thursday | Alias for full weekday name.          |
-| `day`      | Thu      | Alias for abbreviated weekday name.   |
-| `Day1`     | T        | Alias for first letter of weekday.    |
-| `DD`       | 04       | Two-digit day of month.               |
-| `DD1`      | 4        | One-digit day of month if applicable. |
-
-### Time Components
-
-| Token  | Example | Description                               |
-| ------ | ------- | ----------------------------------------- |
-| `HH`   | 14      | 24-hour clock, two digits.                |
-| `HH1`  | 14      | 24-hour clock, one digit if applicable.   |
-| `H11`  | 02 PM   | 12-hour clock, two digits, with meridiem. |
-| `h11`  | 2 PM    | 12-hour clock, one digit, with meridiem.  |
-| `H12`  | 02 PM   | Alias for `H11`.                          |
-| `h12`  | 2 PM    | Alias for `h11`.                          |
-| `H23`  | 14      | 24-hour clock without meridiem.           |
-| `h23`  | 14      | Alias for `H23`.                          |
-| `H24`  | 14      | Alias for `H23`.                          |
-| `h24`  | 14      | Alias for `H23`.                          |
-| `mm`   | 04      | Two-digit minute.                         |
-| `mm1`  | 4       | One-digit minute if applicable.           |
-| `ii`   | 04      | Alias for minute (alternative token).     |
-| `ii1`  | 4       | One-digit minute (alias).                 |
-| `ss`   | 05      | Two-digit second.                         |
-| `ss1`  | 5       | One-digit second if applicable.           |
-| `ms`   | 006     | Milliseconds, padded.                     |
-| `sss`  | 006     | Alias for milliseconds.                   |
-| `sss1` | 6       | One-digit millisecond.                    |
-| `ms1`  | 6       | Alias for `sss1`.                         |
+| `TIMEZONE`   | GMT+07:00                                  | Standard uppercase full time zone.                     |
+| `TIMEZONE+-` | GMT+07:00                                  | Full numeric time zone with `+-` label.                |
+| `Timezone`   | GMT+7                                      | Simplified mixed-case time zone.                       |
+| `timezone`   | GMT+7                                      | Lowercase simplified time zone.                        |
+| `timezone+-` | GMT+7                                      | Lowercase simplified time zone with `+-` label.        |
+| `TZ`         | GMT+07:00                                  | Abbreviated uppercase time zone.                       |
+| `tz`         | GMT+7                                      | Abbreviated lowercase time zone.                       |
+| `+-`         | +07:00                                     | Pure numeric offset only.                              |
+| `YYYY`       | 2024                                       | Four-digit year.                                       |
+| `yy`         | 24                                         | Two-digit year.                                        |
+| `MONTH`      | July                                       | Full month name.                                       |
+| `month`      | Jul                                        | Abbreviated month name.                                |
+| `Month1`     | J                                          | First letter of month name.                            |
+| `MM`         | 07                                         | Two-digit month number.                                |
+| `MM1`        | 7                                          | One-digit month number if applicable.                  |
+| `WEEKDAY`    | Thursday                                   | Full weekday name.                                     |
+| `weekday`    | Thu                                        | Abbreviated weekday name.                              |
+| `Weekday1`   | T                                          | First letter of weekday.                               |
+| `DAY`        | Thursday                                   | Alias for full weekday name.                           |
+| `day`        | Thu                                        | Alias for abbreviated weekday name.                    |
+| `Day1`       | T                                          | Alias for first letter of weekday.                     |
+| `DD`         | 04                                         | Two-digit day of month.                                |
+| `DD1`        | 4                                          | One-digit day of month if applicable.                  |
+| `HH`         | 14                                         | 24-hour clock, two digits.                             |
+| `HH1`        | 14                                         | 24-hour clock, one digit if applicable.                |
+| `H11`        | 02 PM                                      | 12-hour clock, two digits, with meridiem.              |
+| `h11`        | 2 PM                                       | 12-hour clock, one digit, with meridiem.               |
+| `H12`        | 02 PM                                      | Alias for `H11`.                                       |
+| `h12`        | 2 PM                                       | Alias for `h11`.                                       |
+| `H23`        | 14                                         | 24-hour clock without meridiem.                        |
+| `h23`        | 14                                         | Alias for `H23`.                                       |
+| `H24`        | 14                                         | Alias for `H23`.                                       |
+| `h24`        | 14                                         | Alias for `H23`.                                       |
+| `mm`         | 04                                         | Two-digit minute.                                      |
+| `mm1`        | 4                                          | One-digit minute if applicable.                        |
+| `ii`         | 04                                         | Alias for minute (alternative token).                  |
+| `ii1`        | 4                                          | One-digit minute (alias).                              |
+| `ss`         | 05                                         | Two-digit second.                                      |
+| `ss1`        | 5                                          | One-digit second if applicable.                        |
+| `ms`         | 006                                        | Milliseconds, padded.                                  |
+| `sss`        | 006                                        | Alias for milliseconds.                                |
+| `sss1`       | 6                                          | One-digit millisecond.                                 |
+| `ms1`        | 6                                          | Alias for `sss1`.                                      |
 
 ## Configuration
 
