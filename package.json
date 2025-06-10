@@ -1,11 +1,27 @@
 {
   "name": "@superhero/date",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "Extended date object with additional methods",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
   "exports": {
     ".": "./index.js"
+  },
+  "scripts": {
+    "syntax-check": "syntax-check",
+    "test": "syntax-check; FORCE_COLOR=1 node --test --test-reporter=@superhero/audit/reporter --experimental-test-coverage"
+  },
+  "devDependencies": {
+    "@superhero/audit": "^4.0.3",
+    "@superhero/syntax-check": "0.0.2"
+  },
+  "author": {
+    "name": "Erik Landvall",
+    "email": "erik@landvall.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superhero/date.git"
   }
 }
