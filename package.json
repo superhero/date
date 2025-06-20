@@ -1,6 +1,6 @@
 {
   "name": "@superhero/date",
-  "version": "4.1.2",
+  "version": "4.7.0",
   "description": "Extended date object with additional methods",
   "main": "index.js",
   "license": "MIT",
@@ -10,10 +10,11 @@
   },
   "scripts": {
     "syntax-check": "syntax-check",
-    "test": "syntax-check; FORCE_COLOR=1 node --test --test-reporter=@superhero/audit/reporter --experimental-test-coverage"
+    "test": "syntax-check; node --test --test-reporter=@superhero/audit/reporter --experimental-test-coverage"
   },
+  "dependencies": {},
   "devDependencies": {
-    "@superhero/audit": "^4.0.3",
+    "@superhero/audit": "4.7.0",
     "@superhero/syntax-check": "0.0.2"
   },
   "author": {
@@ -22,6 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/superhero/date.git"
+    "url": "https://github.com/superhero/date.git"
   }
 }
