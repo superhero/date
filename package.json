@@ -1,6 +1,6 @@
 {
   "name": "@superhero/date",
-  "version": "4.7.3",
+  "version": "4.7.4",
   "description": "Extended date object with additional methods",
   "main": "index.js",
   "license": "MIT",
@@ -14,7 +14,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@superhero/audit": "4.7.3",
+    "@superhero/audit": "4.7.4",
     "@superhero/syntax-check": "0.0.2"
   },
   "author": {
@@ -23,6 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/superhero/date.git"
+    "url": "git+https://github.com/superhero/date.git"
   }
 }
